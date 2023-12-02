@@ -8,6 +8,10 @@ section {
     padding: 1vw;
 }
 
+.sideBySide {
+    display: inline-flex;
+}
+
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -41,6 +45,7 @@ a:hover {
 img {
     max-width: 300px;
     height: auto;
+    filter: grayscale(60%);
 }
 
 p {
