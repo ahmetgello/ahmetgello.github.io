@@ -43,7 +43,8 @@ a:hover {
 }
 
 img {
-    max-width: 300px;
+    max-width: 250;
+    max-height: 250;
     height: auto;
     filter: grayscale(60%);
 }
