@@ -1,24 +1,22 @@
 body {
     font-family: monospace;
     margin: 0;
-    padding: 0;
+    padding-left: 1vw;
 }
 
-
 section {
-    padding: 30px;
+    padding: 1vw;
 }
 
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
-    padding-left: 40px;
+    padding-left: 2vw;
 }
 
 ul {
-    list-style-type: square;
     padding: 0;
-    padding-left: 50px;
+    padding-left: 5vw;
 }
 
 li {
@@ -30,24 +28,22 @@ a {
     text-decoration: underline;
 }
 .title-link {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     color: #24292e;
     text-decoration: none;
-
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-/* Added CSS rule to make images smaller */
 img {
     max-width: 300px;
     height: auto;
 }
 
 p {
-    padding-left: 40px;
+    padding-left: 0;
     line-height: 1.8;
 }
