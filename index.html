@@ -21,10 +21,12 @@
             margin: 20px auto; /* Center the content horizontally */
             max-width: 800px; /* Set a maximum width */
             text-align: center; /* Center the text */
+            background-color: #1a1a1a; /* Set the background color to dark */
+            color: #ffffff; /* Set the text color to white */
         }
 
         h1, h2, h3, h4, h5, h6 {
-            color: black; /* GitHub link color */
+            color: #ffffff; /* Set the heading color to white */
         }
 
         p {
@@ -42,20 +44,22 @@
         }
 
         code {
-            background-color: #f6f8fa; /* GitHub code background color */
-            border: 1px solid #d1d5da; /* GitHub code border color */
+            background-color: #2d2d2d; /* Set the code background color to dark */
+            border: 1px solid #ffffff; /* Set the code border color to white */
             border-radius: 3px;
             padding: 2px 4px;
             font-family: 'Courier New', monospace;
+            color: #ffffff; /* Set the code text color to white */
         }
 
         pre {
-            background-color: #f6f8fa;
-            border: 1px solid #d1d5da;
+            background-color: #2d2d2d; /* Set the code block background color to dark */
+            border: 1px solid #ffffff; /* Set the code block border color to white */
             border-radius: 3px;
             padding: 10px;
             overflow: auto;
             text-align: left; /* Align code blocks to the left */
+            color: #ffffff; /* Set the code block text color to white */
         }
 
         ul {
@@ -63,10 +67,85 @@
             margin-left: 20px;
             text-align: left; /* Align lists to the left */
         }
-        </style>
+
+        /* Dark theme */
+        body.dark {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6 {
+            color: #ffffff;
+        }
+
+        body.dark code {
+            background-color: #2d2d2d;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+        }
+
+        body.dark pre {
+            background-color: #2d2d2d;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+        }
+
+        body.dark ul {
+            color: #ffffff;
+        }
+
+        /* Light theme */
+        body.light {
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+
+        body.light h1, body.light h2, body.light h3, body.light h4, body.light h5, body.light h6 {
+            color: #1a1a1a;
+        }
+
+        body.light code {
+            background-color: #f2f2f2;
+            border: 1px solid #1a1a1a;
+            color: #1a1a1a;
+        }
+
+        body.light pre {
+            background-color: #f2f2f2;
+            border: 1px solid #1a1a1a;
+            color: #1a1a1a;
+        }
+
+        body.light ul {
+            color: #1a1a1a;
+        }
+        .toggle-button {
+            background-color: #2d2d2d;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .toggle-button:hover {
+            background-color: #ffffff;
+            color: #2d2d2d;
+        }
+    </style>
 </head>
 
-<body>
+<body class="dark">
+    <button onclick="toggleTheme()" class="toggle-button">Toggle Theme</button>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark');
+            body.classList.toggle('light');
+        }
+    </script>
+    
     <section class="sideBySide" id="upper">
         <img src="image.jpg" alt="Placeholder Image" width="250" height="250" style="border-radius:12px">
         <div>
@@ -92,9 +171,9 @@
                 <p>Educational application for pre-school kids.</p>
                 <a href="https://play.google.com/store/apps/details?id=com.ValoniasStudio.Kidlab"><img src="KidLab.png" alt="Placeholder Image" width="250" height="250" style="border-radius:12px"> </a>
             </li>
-            <li>
                 <a href="https://www.youtube.com/embed/vAl1RH4SiNo?si=53Rcm9Pdq85SA-hM">
-                    Hackers Game </a>
+            <li>
+                <a> Hackers Game </a>
                 <p>Duolingo-like gamified learning of Cyber Security.</p>
                 <iframe width="400" height="230" style="border-radius:12px" src="https://www.youtube.com/embed/vAl1RH4SiNo?si=53Rcm9Pdq85SA-hM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </li>
@@ -160,7 +239,6 @@
             
     </section>
 
-
     <section id="help">
         <h1>Helpful Websites</h1>
         <ul>
@@ -207,6 +285,7 @@
             </li>
         </ul>
     </section>
+
     <section id="footer">
         <h1>Social Links</h1>
         <p>
