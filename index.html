@@ -70,7 +70,7 @@
 
         /* Dark theme */
         body.dark {
-            background-color: #1a1a1a;
+            background-color: #222222;
             color: #ffffff;
         }
 
@@ -128,31 +128,33 @@
             cursor: pointer;
         }
 
-        .toggle-button:hover {
-            background-color: #ffffff;
-            color: #2d2d2d;
-        }
+    
     </style>
 </head>
 
-<body class="dark">
-    <button onclick="toggleTheme()" class="toggle-button">Toggle Theme</button>
-
+<body class="light">
+    
     <script>
         function toggleTheme() {
             const body = document.body;
-            body.classList.toggle('dark');
             body.classList.toggle('light');
+            body.classList.toggle('dark');
+            // change the button text based on theme
+            const theme = body.classList.contains('dark') ? 'light' : 'dark';
+            // change text
+            document.querySelector('.toggle-button').textContent = `${theme} mode`;
+
         }
     </script>
     
     <section class="sideBySide" id="upper">
-        <img src="image.jpg" alt="Placeholder Image" width="250" height="250" style="border-radius:12px">
+        <img src="images/image.jpg" alt="Ahmet's Profile Picture" width="250" height="250" style="border-radius:50%">
         <div>
             <h1>Ahmet Kallo <span>(Gello)</span></h1>
             <p>I'm 18 years old. Interested in Technology, Game Development, and AI.</p>
         </div>
     </section>
+    <button onclick="toggleTheme()" class="toggle-button">dark mode</button>
 
     <section id="uni">
         <ul>
@@ -169,7 +171,7 @@
             <li>
                 <a href="https://KidLab.app"> KidLab</a>
                 <p>Educational application for pre-school kids.</p>
-                <a href="https://play.google.com/store/apps/details?id=com.ValoniasStudio.Kidlab"><img src="KidLab.png" alt="Placeholder Image" width="250" height="250" style="border-radius:12px"> </a>
+                <a href="https://play.google.com/store/apps/details?id=com.ValoniasStudio.Kidlab"><img src="images/KidLab.png" alt="Placeholder Image" width="250" height="250" style="border-radius:12px"> </a>
             </li>
                 <a href="https://www.youtube.com/embed/vAl1RH4SiNo?si=53Rcm9Pdq85SA-hM">
             <li>
@@ -191,13 +193,13 @@
                 <a href="https://play.google.com/store/apps/details?id=com.AhmetKallo.BanderitaXGame">
                      The Moon Bander</a>
                 <p>A funny game I made for a Youtuber, you will like it if you know BanderitaX.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.AhmetKallo.BanderitaXGame"><img src="themoonbander.jpg" alt="Placeholder Image" width="250" height="250" style="border-radius:12px"> </a>
+            <a href="https://play.google.com/store/apps/details?id=com.AhmetKallo.BanderitaXGame"><img src="images/themoonbander.jpg" alt="Placeholder Image" width="250" height="250" style="border-radius:12px"> </a>
             </li>
             <li>
                 <a href="https://play.google.com/store/apps/details?id=com.ahmetkallo.com.unity.template.mobile2D">
                      Running Sheep</a>
                 <p>This was my first published game, I learned basic programming.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.ahmetkallo.com.unity.template.mobile2D"><img src="runningsheep.jpg" alt="Placeholder Image" width="250" height="250" style="border-radius:12px"> </a>
+            <a href="https://play.google.com/store/apps/details?id=com.ahmetkallo.com.unity.template.mobile2D"><img src="images/runningsheep.jpg" alt="Placeholder Image" width="250" height="250" style="border-radius:12px"> </a>
             </li>
         </ul>
     </section>
