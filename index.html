@@ -14,6 +14,8 @@
     <meta property="og:image" content="https://gello.me/images/image.jpg" />
     <meta property="og:type" content="article" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -128,7 +130,18 @@
             cursor: pointer;
         }
 
-    
+        .rotate {
+  animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
     </style>
 </head>
 
@@ -144,11 +157,11 @@
         }
     </script>
     
-    <section class="sideBySide" id="upper">
-        <img src="images/image.jpg" alt="Ahmet's Profile Picture" width="250" height="250" style="border-radius:50%">
+    <section id="main">
+        <img class="rotate" src="images/image.jpg" alt="Ahmet's Profile Picture" width="250" height="250" style="border-radius:50%">
         <div>
             <h1>Ahmet Kallo <span>(Gello)</span></h1>
-            <p>I'm 18 years old. Interested in Technology, Game Development, and AI.</p>
+            <p>Interested in Technology, Game Development, and AI.</p>
         </div>
     </section>
     <button onclick="toggleTheme()" class="toggle-button">dark mode</button>
@@ -285,18 +298,18 @@
         </ul>
     </section>
 
-    <section id="footer" style="background-color: rgb(245, 245, 245);">
-        <h1>Social Links</h1>
+    <section id="footer">
+        <h1>Socials</h1>
         <p>
-             <a href="https://x.com/ahmetgello">X</a>,
-             <a href="https://www.youtube.com/@ahmadkelo">Youtube Gaming Channel</a>,
-             <a href="https://www.youtube.com/@ahmetgello">Old Youtube Channel</a>,
-              <a href="https://instagram.com/ahmetgello">Instagram</a>,
-              <a href="https://www.linkedin.com/in/gello">LinkedIn</a>,
-              <a href="https://www.github.com/ahmetgello">Github</a>,
-              <a href="https://www.leetcode.com/ahmetgello">LeetCode</a>.
-              <a href="https://twitch.tv/ahmetgello">Twitch</a>.
-              <a href="https://store.epicgames.com/en-US/u/f441d5cc34c34fbb981c8cb19a19decb">Epic Games Profile</a>.
+             <a href="https://x.com/ahmetgello" class="fa fa-twitter"> ahmetgello</a>|  
+             <a href="https://www.youtube.com/@ahmadkelo" class="fa fa-youtube"> gello_fn</a>|  
+             <a href="https://www.youtube.com/@ahmetgello" class="fa fa-youtube"> ahmetgello</a>|  
+              <a href="https://instagram.com/ahmetgello" class="fa fa-instagram"> ahmetgello</a>|  
+              <a href="https://www.linkedin.com/in/gello" class="fa fa-linkedin"> Ahmet Kallo</a>|  
+              <a href="https://www.github.com/ahmetgello" class="fa fa-github"> ahmetgello</a>|  
+              <a href="https://www.leetcode.com/ahmetgello" class="fa"> LeetCode Profile</a>|  
+              <a href="https://twitch.tv/ahmetgello" class="fa fa-twitch"> ahmetgello</a>|  
+              <a href="https://store.epicgames.com/en-US/u/f441d5cc34c34fbb981c8cb19a19decb" class="fa">Epic Games Profile</a>.
             </p>
         <p><a href="https://calendar.app.google/zzVMikKmwiHBuWEm9">Booking Page</a></p>
     </section>
