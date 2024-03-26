@@ -157,10 +157,11 @@
             document.querySelector('.toggle-button').textContent = `${theme} mode`;
         }
     </script>
-    
+
+
     <section id="main">
         <p>last update March 4th 2024</p>
-        <img class="rotate" src="images/image.jpg" alt="Ahmet's Profile Picture" width="200" height="200" style="border-radius:50%; border: #1a1a1a 2px solid;">
+        <!-- <img class="rotate" src="images/image.jpg" alt="Ahmet's Profile Picture" width="200" height="200" style="border-radius:50%; border: #1a1a1a 2px solid;"> -->
         <h1>Ahmet Kallo <span>(Gello)</span></h1>
         <p>Interested in Technology, Game Development, and AI.</p>
     </section>
@@ -197,7 +198,7 @@
                 <a href="https://www.youtube.com/watch?v=s79lXA6rm8s">
                     Topz Game</a>
                 <p>A video of a game I made for a Youtuber called Topz.</p>
-                <iframe width="400" height="230" style="border-radius:12px" src="https://www.youtube.com/embed/s79lXA6rm8s?si=Pd1lvoC7V0NoeZwa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="350" style="border-radius:12px" src="https://www.youtube.com/embed/s79lXA6rm8s?si=Pd1lvoC7V0NoeZwa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </li>
             <li>
                 <a href="https://play.google.com/store/apps/details?id=com.AhmetKallo.BanderitaXGame">
@@ -297,6 +298,26 @@
             </li>
         </ul>
     </section>
+
+    <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    
+    var disqus_config = function () {
+    this.page.url = "https://gello.me";  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = "main"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://gello.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
     <section id="footer">
         <h1>Socials</h1>
