@@ -1,0 +1,118 @@
+body
+{
+    background-color: rgb(14, 14, 14);
+}
+.myMain {
+
+    height: 240vh;
+    padding-top: 100px;
+
+    margin: 30px;
+
+    background-color: rgb(23, 23, 24);
+    border-radius: 20px;
+    border: solid 2px rgb(42, 42, 42);
+}
+.myImage {
+    border-radius: 50%;
+    border: solid 2px rgb(42, 42, 42);
+    width: 200px;
+    background-color: rgb(38, 38, 38);
+    border-radius: 30px;
+}
+.myName
+{
+    color: rgb(249, 249, 249);
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.imagePlace
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+    justify-self: center;
+}
+.mySubtitle
+{
+    color: rgb(249, 249, 249);
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.myContent
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+    justify-self: center;
+    padding: 30px;
+}
+.myP
+{
+    color: rgb(205, 205, 205);
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.myButton
+{
+    color: rgb(254, 212, 94);
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    margin: 0;
+    text-align: center;
+    background-color: rgb(38, 38, 38);
+    border: solid 2px rgb(42, 42, 42);
+    border-radius: 10px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgb(42, 42, 42);
+}
+
+.myHr
+{
+    width: 10%;
+    height: 4px;
+    background-color: rgb(254, 185, 80);
+    border: none;
+    border-radius: 10px;
+}
+
+.mySubName
+{
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    padding: 2px 14px 2px 14px;
+    border-radius: 15px;
+    margin: 0;
+    background-color: rgb(32, 32, 33);
+}
+
+.myRank
+{
+    width: 200px;
+    height: 106px;
+    border: solid 2px rgb(42, 42, 42);
+    border-radius: 10px;
+    
+}
+.mySocial
+{
+    color: gray;
+    text-decoration: none;
+    padding: 5px;    
+}
+
+.myul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
