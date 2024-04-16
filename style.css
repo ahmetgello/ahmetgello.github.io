@@ -4,7 +4,7 @@ body
 }
 .myMain {
 
-    height: 2000px;
+    height: fit-content;
     padding-top: 100px;
 
     margin: 30px;
